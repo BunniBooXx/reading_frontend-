@@ -7,9 +7,6 @@ const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const HomePage = () => {
     const [user, setUser] = useState(null);
     const [books, setBooks] = useState([]);
-    const [title, setTitle] = useState('');
-    const [author, setAuthor] = useState('');
-    const [genre, setGenre] = useState('');
 
     useEffect(() => {
         const fetchUserData = async () => {
